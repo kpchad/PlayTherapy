@@ -1,0 +1,79 @@
+# Authors
+
+The Microsoft Mixed Reality Toolkit is a collaborative project containing contributions from individuals around the world. Our sincere thanks to all who have, and continue to contribute.
+
+- achaperon
+- AdamMitchell-ms
+- alandergrouse
+- Alex Cooper
+- Alexees
+- andreiborodin
+- artsouflMS
+- Austin Ha
+- Bertrand Oustrière
+- Bertrand75014
+- Cameron-Micka
+- CDiaz-MS
+- chbecker-ms
+- chrisfromwork
+- CoPrez
+- cre8ivepark
+- danielhofmann-ms
+- davidkline-ms
+- derekfreed
+- dfields-msft
+- Ecnassianer
+- ericob
+- gejohnst
+- gilbdev
+- googlan
+- graycelee
+- Jarodshow
+- jbienzms
+- Jerome Humbert
+- jganser
+- johnppella
+- JonathanPalmerGD
+- julenka
+ -julianloehr-kg
+- jwittner
+- Kent1LG
+- keveleigh
+- killerantz
+- LaneMax
+- LocalJoost
+- luis-valverde-ms
+- lukastonneMS
+- macborow
+- MenelvagorMilsom
+- michael-house
+- mpkoz
+- ms738
+- myrandaGoesToSpace
+- Nakda
+- Nick K.
+- Norbert Nemec
+- paco-ms
+- phosphoer
+- provencher
+- Quentin LG
+- radicalad
+- Railboy
+- ritijain
+- ryzngard
+- sgwin
+- SimonDarksideJ
+- sloh-ms
+- sostel
+- stefan.wasserbauer
+- StephenHodgson
+- TakahiroMiyaura
+- tarukosu
+- thalbern
+- Troy-Ferrell
+- vaoliva
+- wassx
+- Weasy666
+- witian
+- wiwei
+- Yoyozilla

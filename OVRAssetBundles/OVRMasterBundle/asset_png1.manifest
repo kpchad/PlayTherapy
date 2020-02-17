@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 70466603
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b060dbe0a31093a4c940dd8d56a9df39
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/SmokeBillow_atlas_001_v2.png
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Textures/ButtonPin.png
+- Assets/Oculus/VR/Textures/HandTracking/HandTracking_uvmap_2048.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/Smoke30Frames.png
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Textures/ButtonHandRay.png
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Textures/ButtonHandMesh.png
+Dependencies: []

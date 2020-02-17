@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 3996279574
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 856a01bd804101a727ebe2c12b9c0691
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Manipulation_Start.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Select_Main.wav
+- Assets/MixedRealityToolkit.Examples/StandardAssets/Audio/FullOctave/GSharp.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Start_From_Stop_v01.wav
+- Assets/MixedRealityToolkit.Examples/StandardAssets/Audio/FullOctave/C.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Slider_Grab.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Scale_Start.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Slider_Pass_Notch.wav
+- Assets/MixedRealityToolkit.Examples/StandardAssets/Audio/FullOctave/D.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Rotate_Stop.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Shell_Click_Out.wav
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Audio/ButtonUp.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Manipulation_End.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Stop.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Slate_Touch.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Rotate_Fast_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_2.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Rotate_Slow_Loop.wav
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Rotate_Start.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_1.wav
+Dependencies: []

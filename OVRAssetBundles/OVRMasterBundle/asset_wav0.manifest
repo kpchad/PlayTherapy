@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 2498317406
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17270688e0666c6dabab5ddcd809bf7b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/TrainWhistleAv01.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_2_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_5.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_1_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_3_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_5_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Crossing.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_4.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_3.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_4_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Moo_Cow.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Start.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_SteamBlast_A.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Start_From_Stop_v01.wav
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Audio/ButtonUp.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Stop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Rotate_Fast_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_2.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Rotate_Slow_Loop.wav
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_1.wav
+Dependencies: []

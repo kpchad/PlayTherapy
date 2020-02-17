@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1310794056
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d0853ce331f43e409477067beac89e72
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55d48f4ad9c3b13330b9eb5ee5686477
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/MixedRealityToolkit/StandardAssets/Shaders/MixedRealityStandard.shader
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Shaders/FingerTipCursor.shader
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Shaders/OculusSampleAlphaHandOutline.shader
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Shaders/GradientSkybox.shader
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/ButtonGlow.shader
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/OculusSampleTrainSmokeShader.shader
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/GradientSkybox.shader
+- Assets/MixedRealityToolkit/StandardAssets/Shaders/InstancedColored.shader
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Shaders/HandTriangles.shader
+- Assets/MixedRealityToolkit/StandardAssets/Shaders/MRTK_Wireframe.shader
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/XingLightShader.shader
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/OculusSampleTrainPropsShader.shader
+Dependencies: []

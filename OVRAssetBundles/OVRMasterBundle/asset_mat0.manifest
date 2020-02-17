@@ -1,0 +1,54 @@
+ManifestFileVersion: 0
+CRC: 1100346021
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f462bb89d726e28c7d6b6f8cfce0e006
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 166ccc02b23b388be49378fccb1ac3fe
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+Assets:
+- Assets/MixedRealityToolkit.Services/DiagnosticsSystem/Materials/DiagnosticsInstancedColored.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_TransparentGray.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_GrabPointerTetherLine.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Wireframe.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_Green.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_DefaultPointerLine.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Materials/HandIndexTip.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/RayMaterial.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/TargetMaterial.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_LightGray.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/PropMaterial.mat
+- Assets/PlayTherapy/Prefabs/Ball.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SmokeMat.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SkyboxForRealtime.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/GridMat.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MouseCursor.mat
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Materials/Colors/Blue.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SelectionCylinderBase.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/WindmillMaterial.mat
+- Assets/Oculus/VR/Meshes/OculusTouchForRift/Materials/OculusTouchForRift_Material.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/SkeletonBoneMaterial.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_ArticulatedHandMesh.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_DefaultPointerLineNoTarget.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/ControllerBoxButtons.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Meshes/Cursors/Materials/Shadow.mat
+- Assets/Oculus/VR/Materials/BasicHandMaterial.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/XingLightMaterial.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_FingerTipCursor.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/ControllerBoxGlow.mat
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Materials/SkyboxForRealtime_Dark.mat
+Dependencies:
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_jpg0

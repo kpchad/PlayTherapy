@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1664992926
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c4afeaa6a7a91ca10e7263434e201eea
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/TeleportCursor/TeleportValid.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorRotateVertical.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorMoveEastWest.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/TeleportCursor/TeleportCursorDisabled.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorMoveNorthSouth.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/TeleportCursor/TeleportInvalid.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorMoveNortheastSouthwest.anim
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Animations/CowHop.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/DefaultCursorPressedAnim.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/DefaultCursorIdleAnim.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorMoveCross.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorRotateHorizontal.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorNoContext.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/Contextual/DefaultCursorMoveNorthwestSoutheast.anim
+- Assets/MixedRealityToolkit.SDK/Features/UX/Animations/Cursors/DefaultCursor/DefaultCursorIdleRingAnim.anim
+Dependencies: []

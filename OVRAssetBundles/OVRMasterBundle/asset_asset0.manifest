@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+CRC: 2154515489
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9b13ef1faea63e71152af05444668809
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 83fa5ca8cf4a0772bfb7efedfcf9e7a1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b71cb900fa9dec5488df2deb180db58f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: db393d206eab4604ab74278cb6cda355, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a4a1c93114e9437cb75d8b3ee4e0e1ba, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: eebbca41bb0b40d298ef201735d08616, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8c2d00f2d26cc124caed106ffbfe3f06, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3e721f74104fc5e498856a7c337d6632, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a794cc45c30a79b4da55bfd426876503, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d1a15d870c8b4e52acc4643bd258ed6e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e534d3d8fbada634785d567d8fe8562c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d561f5f963b45674aa423435fb820879, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 78a4b02a0d9e7044fa19c6d432d0cafa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8275efdbe76bdff49a97a8e82fba118d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ee54661ca8af487c9db40e57d479fa48, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7612acbc1a4a4ed0afa5f4ccbe42bee4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 19f279aded72cb741b4de89a54359dd4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1a1cf5fd47e548e6a23bdd3ddcc00cf6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9fd6338e77774badb73a2b1320b41caf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7554812f08ec49e694a8d9d4ee235a9c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityEyeTrackingProfile.asset
+- Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/Profiles/DefaultWindowsMixedRealityCameraSettingsProfile.asset
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Profiles/QuestDiagnosticProfile.asset
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Profiles/OculusQuestHandInputConfigurationProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealitySpatialAwarenessMeshObserverProfile.asset
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Profiles/OculusQuestHandInputSystemProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityInputActionRulesProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityBoundaryVisualizationProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityInputRecordingProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityInputSimulationProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealitySpatialAwarenessSystemProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityInputPointerProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityGesturesProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityRegisteredServiceProvidersProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityInputActionsProfile.asset
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Profiles/QuestCameraProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/DefaultMixedRealityControllerMappingProfile.asset
+- Assets/MixedRealityToolkit.SDK/Profiles/HoloLens2/DefaultHoloLens2HandTrackingProfile.asset
+Dependencies:
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_prefab0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_prefab1

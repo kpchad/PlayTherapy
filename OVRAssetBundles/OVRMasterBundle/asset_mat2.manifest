@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 1259092732
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 977d76fb4c0193cfd989152a90f19063
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9704b28e902e86d85ac8541796c9e339
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/ControllerBoxGlow.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_PressableInteractablesButtonBox.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_Lime.mat
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Materials/SkyboxForRealtime_Dark.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Materials/PinchSliderTickMarkMaterial.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/DefaultHandMaterial.mat
+- Assets/MixedRealityToolkit.Examples/StandardAssets/Materials/PianoKeys.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SelectionCylinder.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/PokeMaterial.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_Magenta.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Materials/BoundingBoxHandleBlueGrabbed.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Occlusion.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Materials/BoundingBoxHandleWhite.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonContentCageProximity.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_TransparentBlue.mat
+- Assets/Oculus/VR/Materials/GearVrController/GearVrControllerMat_128.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonIconPin.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicBackPlateBorderOnly.mat
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Materials/Colors/Green.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/MRTK_GrabbableDots2RowsH.mat
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Materials/Colors/Red.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Meshes/Cursors/Materials/Light.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/ControllerBox.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_GrabPointerGrabPoint.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/BackgroundMaterial.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonIconHandJoint.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_TransparentEmerald.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_GlowingCyan.mat
+- Assets/Oculus/VR/Meshes/OculusGoController/Materials/OculusGoControllerMat.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Materials/UnityUIBackground.mat
+Dependencies:
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_png1
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_tif0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_tga0

@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 433537711
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3ad0f3c33c970191a1cf7a4cb75f4b7a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2164263bd948184a9373784f776f453a
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_Yellow.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Materials/HandJoint.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonIconHandMesh.mat
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SmokeBillowMat.mat
+- Assets/MixedRealityToolkit.Examples/StandardAssets/Materials/Coffee.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_Blue.mat
+- Assets/MixedRealityToolkit.ThirdParty/OculusQuestInput/Art/Materials/SummonButtonIcon.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/CarryModeOutline.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonIconProfiler.mat
+- Assets/MixedRealityToolkit.SDK/StandardAssets/Materials/MRTK_Standard_TransparentCyan.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonPlate.mat
+- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicBackPlateCircular.mat
+- Assets/Oculus/VR/Meshes/GearVrController/Materials/malibuController_color_1024.mat
+- Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Materials/HolographicButtonIconHandRay.mat
+Dependencies:
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_png1
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/Unity/PlayTherapy/OVRAssetBundles/OVRMasterBundle/asset_tga0

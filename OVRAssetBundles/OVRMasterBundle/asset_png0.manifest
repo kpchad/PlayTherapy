@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 2947025608
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aeee02b28141be2eaa151a2564598e8c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4c5d9a7713e4f955dc16167142b1739b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/TrainScene/Lightmap-0_comp_dir.png
+- Assets/Oculus/VR/Textures/OculusTouchForRift/touchController_albedo.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_bg_elements_Normal.png
+- Assets/MixedRealityToolkit/StandardAssets/Textures/DefaultPointerDottedLine.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/grid_10x10_v4.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/ControllerBoxTextures/controller_plain_Normal.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/XingLight.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder_filled.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/TrainScene/ReflectionProbe-0.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/ControllerBoxTextures/controller_plain_DiffuseGlossiness.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_main_elements_DiffuseGlossiness.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_bg_elements_DiffuseGlossiness.png
+- Assets/MixedRealityToolkit/StandardAssets/Icons/settings_icon.png
+- Assets/MixedRealityToolkit/StandardAssets/Textures/MouseCursor.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/TrainScene/Lightmap-1_comp_dir.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_main_elements_Normal.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/SmokeBillow_atlas_001_v2.png
+- Assets/Oculus/VR/Textures/HandTracking/HandTracking_uvmap_2048.png
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/Smoke30Frames.png
+Dependencies: []
