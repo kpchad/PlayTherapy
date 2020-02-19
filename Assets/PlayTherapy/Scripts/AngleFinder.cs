@@ -15,13 +15,12 @@ public class AngleFinder : MonoBehaviour
    public Vector3 GetAngle(Handedness trackedHandedness, TrackedHandJoint parentSegment, TrackedHandJoint childSegment)
     {
         IMixedRealityHand hand = GetController(trackedHandedness) as IMixedRealityHand;
-        if (hand == null || !hand.TryGetJoint(parentSegment, out MixedRealityPose pose))
+        if (hand == null || !hand.TryGetJoint(parentSegment, out MixedRealityPose pose) || !hand.TryGetJoint(childSegment, out MixedRealityPose childPose))
         {
+            Debug.Log("one or both of the segments are not valid/visible");
             return Vector3.zero; //return vector of zeros
         }
-
-        hand.TryGetJoint(childSegment, out MixedRealityPose childPose);
-
+        
         Quaternion relativeQuaternion = Quaternion.Inverse(childPose.Rotation) * pose.Rotation;
 
         Xrot = relativeQuaternion.eulerAngles.x;
