@@ -8,28 +8,16 @@ using UnityEngine.UI;
 
 public class AngleFinder : MonoBehaviour
 {
-    string myLog;
-    Queue myLogQueue = new Queue();
 
-    [SerializeField]
-    private GameObject Xrottxt, Yrottxt, Zrottxt;
     private float Xrot, Yrot, Zrot;
-    public int XrotInt, YrotInt, ZrotInt;
+    private int XrotInt, YrotInt, ZrotInt;
 
-    [SerializeField]
-    private Handedness trackedHandedness = Handedness.Left;
-
-    [SerializeField]
-    private TrackedHandJoint parentSegment;
-    [SerializeField]
-    private TrackedHandJoint childSegment;
-
-    void LateUpdate()
+   public Vector3 GetAngle(Handedness trackedHandedness, TrackedHandJoint parentSegment, TrackedHandJoint childSegment)
     {
         IMixedRealityHand hand = GetController(trackedHandedness) as IMixedRealityHand;
         if (hand == null || !hand.TryGetJoint(parentSegment, out MixedRealityPose pose))
         {
-            return;
+            return Vector3.zero; //return vector of zeros
         }
 
         hand.TryGetJoint(childSegment, out MixedRealityPose childPose);
@@ -43,14 +31,10 @@ public class AngleFinder : MonoBehaviour
         XrotInt = Mathf.RoundToInt(Xrot);
         YrotInt = Mathf.RoundToInt(Yrot);
         ZrotInt = Mathf.RoundToInt(Zrot);
-    }
 
-    void OnGUI()
-    {
-        Xrottxt.GetComponent<Text>().text = XrotInt.ToString();
-        Yrottxt.GetComponent<Text>().text = YrotInt.ToString(); 
-        Zrottxt.GetComponent<Text>().text = ZrotInt.ToString();
+        Vector3 angle = new Vector3 (XrotInt, YrotInt, ZrotInt);
 
+        return angle; 
     }
 
     private static IMixedRealityController GetController(Handedness handedness)

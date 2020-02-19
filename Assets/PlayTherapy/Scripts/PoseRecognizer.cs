@@ -12,7 +12,7 @@ public class PoseRecognizer : MonoBehaviour
 
     public GameObject HandTracker;
     private AngleFinder angleFinder;
-    public GameObject cookie;
+
     public int targetMin;
     public int targetMax;
     private bool pose, pos, target, lastTarget;
@@ -26,7 +26,11 @@ public class PoseRecognizer : MonoBehaviour
 
     [SerializeField]
     private Handedness trackedHandedness = Handedness.Left;
-    IMixedRealityHand hand;
+
+    [SerializeField]
+    private TrackedHandJoint parentSegment;
+    [SerializeField]
+    private TrackedHandJoint childSegment;
 
     // Start is called before the first frame update
     void Start()
@@ -34,44 +38,30 @@ public class PoseRecognizer : MonoBehaviour
         //access script that is calculating the angles
         angleFinder = HandTracker.GetComponent<AngleFinder>();
 
-        //define mixed reality hand to get properties from
-        hand = GetController(trackedHandedness) as IMixedRealityHand;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if((angleFinder.YrotInt > targetMin) && (angleFinder.YrotInt < targetMax))
+        // fetch desired angles
+        Vector3 angle = angleFinder.GetAngle(trackedHandedness, parentSegment, childSegment);
+
+        // check if angle meets target
+        if((angle.y > targetMin) && (angle.y < targetMax))
         {
             pose = true;
             poseBool.GetComponent<Text>().text = true.ToString();
-        }
-        else
-        {
-            pose = false;
-            poseBool.GetComponent<Text>().text = false.ToString();
-        }
 
-        if (true == true)//(Collision == true)
-        {
-            pos = true;
-            posBool.GetComponent<Text>().text = true.ToString();
-        }
-        else
-        {
-            pos = false;
-            posBool.GetComponent<Text>().text = false.ToString();
-        }
-
-        if ((pose == true) && (pos == true))
-        {
+            //update last pose
             lastTarget = target;
             target = true;
         }
         else
         {
+            pose = false;
+            poseBool.GetComponent<Text>().text = false.ToString();
+
+            //update last pose
             lastTarget = target;
             target = false;
         }
@@ -84,15 +74,4 @@ public class PoseRecognizer : MonoBehaviour
 
     }
 
-    private static IMixedRealityController GetController(Handedness handedness)
-    {
-        foreach (IMixedRealityController c in CoreServices.InputSystem.DetectedControllers)
-        {
-            if (c.ControllerHandedness.IsMatch(handedness))
-            {
-                return c;
-            }
-        }
-        return null;
-    }
 }
