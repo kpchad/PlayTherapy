@@ -13,7 +13,7 @@ public class PoseRecognizer : MonoBehaviour
     public GameObject HandTracker;
     private AngleFinder angleFinder;
 
-    private bool target, lastTarget;
+    private bool lastTarget;
     private int countInt = 0;
 
     //debug outputs
