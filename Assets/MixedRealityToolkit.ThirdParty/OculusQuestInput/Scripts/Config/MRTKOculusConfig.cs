@@ -59,7 +59,7 @@ namespace prvncher.MixedReality.Toolkit.Config
         [Header("Performance Configuration")]
         [SerializeField]
         [Tooltip("Default CPU performance level (0-2 is documented), (3-5 is undocumented).")]
-        [Range(0, 2)]
+        [Range(0, 5)]
         private int defaultCpuLevel = 2;
 
         /// <summary>
@@ -71,13 +71,15 @@ namespace prvncher.MixedReality.Toolkit.Config
             set
             {
                 defaultCpuLevel = value;
+#if !UNITY_EDITOR
                 OVRManager.cpuLevel = defaultCpuLevel;
+#endif
             }
         }
 
         [SerializeField]
         [Tooltip("Default GPU performance level (0-2 is documented), (3-5 is undocumented).")]
-        [Range(0, 2)]
+        [Range(0, 5)]
         private int defaultGpuLevel = 2;
 
         /// <summary>
@@ -89,7 +91,9 @@ namespace prvncher.MixedReality.Toolkit.Config
             set
             {
                 defaultGpuLevel = value;
+#if !UNITY_EDITOR
                 OVRManager.gpuLevel = defaultGpuLevel;
+#endif
             }
         }
     }
