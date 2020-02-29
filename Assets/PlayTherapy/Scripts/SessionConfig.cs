@@ -1,18 +1,42 @@
-﻿using System.Collections;
+﻿using Microsoft.MixedReality.Toolkit.UI;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SessionConfig : MonoBehaviour
 {
+    public GameObject TabletopExercise;
+    public GameObject KnuckleBendExercise;
+    public GameObject LeftHandSetting;
+    public GameObject RightHandSetting;
+    public GameObject DifficultySelect;
+    public GameObject ThemeSelect;
 
-    enum exercise { tabletop, knucklebend };
-    enum difficulty { easy, medium, hard};
-    enum side { left, right, both};
-    enum theme {tomsawyer, tswift};
+    public bool TableTopState;
+    public bool KnuckleBendState;
+    public bool LeftHandState;
+    public bool RightHandState;
+    public int DifficultyInt;
+    public int ThemeInt;
 
-    void createSession(exercise exercise1, exercise exercise2, difficulty difficulty, side side, theme theme)
+    private GameObject localSceneManager;
+
+    private void Start()
     {
-        
+        localSceneManager = GameObject.Find("localSceneManager");
+    }
+
+    public void getSessionSettings()
+    {
+
+        TableTopState = TabletopExercise.GetComponent<Interactable>().IsToggled;
+        KnuckleBendState = KnuckleBendExercise.GetComponent<Interactable>().IsToggled;
+        LeftHandState = LeftHandSetting.GetComponent<Interactable>().IsToggled;
+        RightHandState = RightHandSetting.GetComponent<Interactable>().IsToggled;
+        DifficultyInt = DifficultySelect.GetComponent<InteractableToggleCollection>().CurrentIndex;
+        ThemeInt = ThemeSelect.GetComponent<InteractableToggleCollection>().CurrentIndex;
+
+        localSceneManager.GetComponent<localSceneManager>().startTherapy();
     }
 
 
