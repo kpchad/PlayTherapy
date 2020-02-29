@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
-    void Awake()
+
+    private static bool SceneManagerExists;
+    // Use this for initialization
+    void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (!SceneManagerExists) 
+        {
+            SceneManagerExists = true;
+            DontDestroyOnLoad(this.gameObject); 
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
+
 }

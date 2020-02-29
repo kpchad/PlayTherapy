@@ -19,6 +19,11 @@ public class localSceneManager : MonoBehaviour
 
     public void startSession()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);//load session scene
+    }
+
+    public void exitSession()
+    {
+        SceneManager.LoadScene(0);//load config scene
     }
 }
