@@ -26,7 +26,7 @@ public class SessionConfig : MonoBehaviour
         localSceneManager = GameObject.Find("localSceneManager");
     }
 
-    public void getSessionSettings()
+    public void LaunchSession()
     {
 
         TableTopState = TabletopExercise.GetComponent<Interactable>().IsToggled;

@@ -16,37 +16,30 @@ public class PoseRecognizer : MonoBehaviour
     private bool lastTarget;
     private int countInt = 0;
 
+    public bool trackLeftHand = false;
+    public bool trackRightHand = false;
+    public enum difficulty { easy, medium, hard };
+    public difficulty Difficulty = difficulty.easy;
+
+    public enum pose { Tabletop, Knucklebend, Neutral };
+
+    public bool inLeftTableTopZone;
+    public bool inLeftKnucklebendZone;
+    public bool inLeftNeutralZone;
+    public bool inRightTableTopZone;
+    public bool inRightKnucklebendZone;
+    public bool inRightNeutralZone;
+
     //debug outputs
-    //public GameObject poseAssign;
     public GameObject poseBool;
     public GameObject count;
-
-    [SerializeField]
-    private Handedness trackedHandedness1 = Handedness.Left;
-    [SerializeField]
-    private TrackedHandJoint parentSegment1;
-    [SerializeField]
-    private TrackedHandJoint childSegment1;
-    [SerializeField]
-    private int targetMin1;
-    [SerializeField]
-    private int targetMax1;
-
-    [SerializeField]
-    private Handedness trackedHandedness2 = Handedness.Left;
-    [SerializeField]
-    private TrackedHandJoint parentSegment2;
-    [SerializeField]
-    private TrackedHandJoint childSegment2;
-    [SerializeField]
-    private int targetMin2;
-    [SerializeField]
-    private int targetMax2;
 
     public GameObject Y1txt;
     public GameObject Y2txt;
     public GameObject Crit1;
     public GameObject Crit2;
+
+    public GameObject ParticleEffect;
 
 
     // Start is called before the first frame update
@@ -60,38 +53,138 @@ public class PoseRecognizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        bool crit1 = checkRequirement(trackedHandedness1, parentSegment1, childSegment1, targetMax1, targetMin1);
-        Crit1.GetComponent<Text>().text = crit1.ToString();
-        bool crit2 = checkRequirement(trackedHandedness2, parentSegment2, childSegment2, targetMax2, targetMin2);
-        Crit2.GetComponent<Text>().text = crit2.ToString();
-
-        //DEBUG
-        int Y1 = debugAngle(trackedHandedness1, parentSegment1, childSegment1);
-        Y1txt.GetComponent<Text>().text = Y1.ToString();
-        int Y2 = debugAngle(trackedHandedness2, parentSegment2, childSegment2);
-        Y2txt.GetComponent<Text>().text = Y2.ToString();
-
-        if (crit1==true && crit2==true)
+        // if hand touching target collider, check for pose
+        if (inLeftTableTopZone && trackLeftHand)
         {
-            poseBool.GetComponent<Text>().text = true.ToString();
+            Debug.Log("check for left tabletop pose!");
+           bool poseBool = checkPose(Handedness.Left, pose.Tabletop);
 
-            if (lastTarget == false)
+           if (poseBool)
+           {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+
+                //increase score
+           }
+        }
+
+        if (inRightTableTopZone && trackRightHand)
+        {
+            Debug.Log("check for right tabletop pose!");
+            bool poseBool = checkPose(Handedness.Right, pose.Tabletop);
+
+            if (poseBool)
             {
-                Debug.Log(countInt);
-                countInt++;
-                count.GetComponent<Text>().text = countInt.ToString();
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+
+                //increase score
             }
-            lastTarget = true;
-         
+        }
+
+        if (inLeftKnucklebendZone && trackLeftHand)
+        {
+            Debug.Log("check for left tabletop pose!");
+            bool poseBool = checkPose(Handedness.Left, pose.Knucklebend);
+
+            if (poseBool)
+            {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+
+                //increase score
+            }
+        }
+
+        if (inRightKnucklebendZone && trackRightHand)
+        {
+            Debug.Log("check for right tabletop pose!");
+            bool poseBool = checkPose(Handedness.Right, pose.Knucklebend);
+
+            if (poseBool)
+            {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+
+                //increase score
+            }
+        }
+
+        if (inLeftNeutralZone && trackLeftHand)
+        {
+            Debug.Log("check for left tabletop pose!");
+            bool poseBool = checkPose(Handedness.Left, pose.Neutral);
+
+            if (poseBool)
+            {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+
+                //increase score
+            }
+        }
+
+        if (inRightNeutralZone && trackRightHand)
+        {
+            Debug.Log("check for right tabletop pose!");
+            bool poseBool = checkPose(Handedness.Right, pose.Neutral);
+
+            if (poseBool)
+            {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+
+                //increase score
+            }
+        }
+
+        ////DEBUG
+        //int Y1 = debugAngle(trackedHandedness1, parentSegment1, childSegment1);
+        //Y1txt.GetComponent<Text>().text = Y1.ToString();
+        //int Y2 = debugAngle(trackedHandedness2, parentSegment2, childSegment2);
+        //Y2txt.GetComponent<Text>().text = Y2.ToString();
+    }
+
+    private bool checkPose(Handedness hand, pose pose)
+    {
+        bool crit1 = false;
+        bool crit2 = false;
+
+        if (pose == pose.Tabletop)
+        {
+            crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 180, 30);
+            //Crit1.GetComponent<Text>().text = crit1.ToString();
+            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 10, 0);
+            //Crit2.GetComponent<Text>().text = crit2.ToString();
+        }
+
+        if (pose == pose.Knucklebend)
+        {
+            crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 20, 0); //change
+            //Crit1.GetComponent<Text>().text = crit1.ToString();
+            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 10, 0); //change
+            //Crit2.GetComponent<Text>().text = crit2.ToString();
+        }
+
+        if (pose == pose.Neutral)
+        {
+            crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 20, 0);
+            //Crit1.GetComponent<Text>().text = crit1.ToString();
+            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 10, 0);
+            //Crit2.GetComponent<Text>().text = crit2.ToString();
+        }
+
+        if (crit1 == true && crit2 == true)
+        {
+            //poseBool.GetComponent<Text>().text = true.ToString();
+            return true;
         }
         else
         {
-            poseBool.GetComponent<Text>().text = false.ToString();
-            lastTarget = false;
-            return;
+            return false;
         }
-    }
+
+       }
 
     private int debugAngle(Handedness trackedHandedness, TrackedHandJoint parentSegment, TrackedHandJoint childSegment)
     {       

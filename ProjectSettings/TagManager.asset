@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Configure
   - Session
+  - LTabletop
+  - LKnucklebend
+  - LNeutral
+  - RTabletop
+  - RKnucklebend
+  - RNeutral
   layers:
   - Default
   - TransparentFX
