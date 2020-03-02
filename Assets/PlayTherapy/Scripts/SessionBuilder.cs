@@ -10,6 +10,11 @@ public class SessionBuilder : MonoBehaviour
     public Transform TableTop10;
     public Transform KnuckleBend10;
     public GameObject PoseRecognizer;
+    public GameObject Sphere;
+    public GameObject MusicPlayer;
+    public AudioClip RUSHClip;
+    public AudioClip TSwiftClip;
+
 
     // read settings from SessionConfig object (carried over from previous scene) and assemble the therapy scene accordingly
     void Start()
@@ -104,6 +109,17 @@ public class SessionBuilder : MonoBehaviour
             else
             {
                 Debug.Log("unrecognized difficulty setting");
+            }
+
+            if (SessionConfig.GetComponent<SessionConfig>().ThemeInt == 0)
+            {
+                Sphere.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+                MusicPlayer.GetComponent<AudioSource>().clip = RUSHClip;
+            }
+            if (SessionConfig.GetComponent<SessionConfig>().ThemeInt == 1)
+            {
+                Sphere.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.blue);
+                MusicPlayer.GetComponent<AudioSource>().clip = TSwiftClip;
             }
         }
     }

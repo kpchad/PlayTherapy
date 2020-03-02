@@ -13,8 +13,8 @@ public class PoseRecognizer : MonoBehaviour
     public GameObject HandTracker;
     private AngleFinder angleFinder;
 
-    private bool lastTarget;
-    private int countInt = 0;
+    public int score = 0;
+    public GameObject Scoreboard;
 
     public bool trackLeftHand = false;
     public bool trackRightHand = false;
@@ -40,6 +40,8 @@ public class PoseRecognizer : MonoBehaviour
     public GameObject Crit2;
 
     public GameObject ParticleEffect;
+    public GameObject LeftHandPrefab; //used to change hand material dynamically
+    public GameObject RightHandPrefab; //used to change hand material dynamically
 
 
     // Start is called before the first frame update
@@ -63,9 +65,44 @@ public class PoseRecognizer : MonoBehaviour
            {
                 //trigger partical effect
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
+                LeftHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green) ;
 
                 //increase score
+                score++;
+                Scoreboard.GetComponent<Text>().text = score.ToString();
            }
+        } else if (inLeftKnucklebendZone && trackLeftHand) {
+            Debug.Log("check for left tabletop pose!");
+            bool poseBool = checkPose(Handedness.Left, pose.Knucklebend);
+
+            if (poseBool)
+            {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+                LeftHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
+
+                //increase score
+                score++;
+                Scoreboard.GetComponent<Text>().text = score.ToString();
+            }
+        } else if (inLeftNeutralZone && trackLeftHand) {
+            Debug.Log("check for left tabletop pose!");
+            bool poseBool = checkPose(Handedness.Left, pose.Neutral);
+
+            if (poseBool)
+            {
+                //trigger partical effect
+                ParticleEffect.GetComponent<ParticleSystem>().Play();
+                LeftHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
+
+                //increase score
+                score++;
+                Scoreboard.GetComponent<Text>().text = score.ToString();
+            }
+        } else
+        {
+            LeftHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.gray);
+
         }
 
         if (inRightTableTopZone && trackRightHand)
@@ -77,27 +114,13 @@ public class PoseRecognizer : MonoBehaviour
             {
                 //trigger partical effect
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
+                RightHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
 
                 //increase score
+                score++;
+                Scoreboard.GetComponent<Text>().text = score.ToString();
             }
-        }
-
-        if (inLeftKnucklebendZone && trackLeftHand)
-        {
-            Debug.Log("check for left tabletop pose!");
-            bool poseBool = checkPose(Handedness.Left, pose.Knucklebend);
-
-            if (poseBool)
-            {
-                //trigger partical effect
-                ParticleEffect.GetComponent<ParticleSystem>().Play();
-
-                //increase score
-            }
-        }
-
-        if (inRightKnucklebendZone && trackRightHand)
-        {
+        } else if (inRightKnucklebendZone && trackRightHand) {
             Debug.Log("check for right tabletop pose!");
             bool poseBool = checkPose(Handedness.Right, pose.Knucklebend);
 
@@ -105,27 +128,13 @@ public class PoseRecognizer : MonoBehaviour
             {
                 //trigger partical effect
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
+                RightHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
 
                 //increase score
+                score++;
+                Scoreboard.GetComponent<Text>().text = score.ToString();
             }
-        }
-
-        if (inLeftNeutralZone && trackLeftHand)
-        {
-            Debug.Log("check for left tabletop pose!");
-            bool poseBool = checkPose(Handedness.Left, pose.Neutral);
-
-            if (poseBool)
-            {
-                //trigger partical effect
-                ParticleEffect.GetComponent<ParticleSystem>().Play();
-
-                //increase score
-            }
-        }
-
-        if (inRightNeutralZone && trackRightHand)
-        {
+        } else if (inRightNeutralZone && trackRightHand) {
             Debug.Log("check for right tabletop pose!");
             bool poseBool = checkPose(Handedness.Right, pose.Neutral);
 
@@ -133,9 +142,16 @@ public class PoseRecognizer : MonoBehaviour
             {
                 //trigger partical effect
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
+                RightHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
 
                 //increase score
+                score++;
+                Scoreboard.GetComponent<Text>().text = score.ToString();
             }
+        } else
+        {
+            RightHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.gray);
+
         }
 
         ////DEBUG
