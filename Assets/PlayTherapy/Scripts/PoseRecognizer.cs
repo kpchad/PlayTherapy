@@ -39,6 +39,8 @@ public class PoseRecognizer : MonoBehaviour
     public GameObject LeftHandPrefab; //used to change hand material dynamically
     public GameObject RightHandPrefab; //used to change hand material dynamically
 
+    public GameObject localSessionManager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +65,10 @@ public class PoseRecognizer : MonoBehaviour
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
                 LeftHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green) ;
 
+                if (score == 0)
+                {
+                    localSessionManager.GetComponent<localSessionManager>().StartSession();
+                }
                 //increase score
                 score++;
                 Scoreboard.GetComponent<Text>().text = score.ToString();
@@ -77,6 +83,10 @@ public class PoseRecognizer : MonoBehaviour
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
                 LeftHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
 
+                if (score == 0)
+                {
+                    localSessionManager.GetComponent<localSessionManager>().StartSession();
+                }
                 //increase score
                 score++;
                 Scoreboard.GetComponent<Text>().text = score.ToString();
@@ -112,6 +122,10 @@ public class PoseRecognizer : MonoBehaviour
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
                 RightHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
 
+                if (score == 0)
+                {
+                    localSessionManager.GetComponent<localSessionManager>().StartSession();
+                }
                 //increase score
                 score++;
                 Scoreboard.GetComponent<Text>().text = score.ToString();
@@ -126,6 +140,10 @@ public class PoseRecognizer : MonoBehaviour
                 ParticleEffect.GetComponent<ParticleSystem>().Play();
                 RightHandPrefab.GetComponent<SkinnedMeshRenderer>().material.SetColor("_Color", Color.green);
 
+                if (score == 0)
+                {
+                    localSessionManager.GetComponent<localSessionManager>().StartSession();
+                }
                 //increase score
                 score++;
                 Scoreboard.GetComponent<Text>().text = score.ToString();

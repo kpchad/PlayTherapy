@@ -11,8 +11,10 @@ public class SessionBuilder : MonoBehaviour
     public Transform KnuckleBend10;
     public GameObject PoseRecognizer;
     public GameObject Sphere;
-    public GameObject RUSHPlayer;
-    public GameObject TSwiftPlayer;
+    public GameObject MusicPlayer;
+
+    public AudioClip RUSH;
+    public AudioClip TSwift;
 
 
     // read settings from SessionConfig object (carried over from previous scene) and assemble the therapy scene accordingly
@@ -115,12 +117,13 @@ public class SessionBuilder : MonoBehaviour
             {
                 Debug.Log("RUSH Theme");
                 Sphere.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.magenta);
-                RUSHPlayer.SetActive(true);
+                MusicPlayer.GetComponent<AudioSource>().clip = RUSH;
+                
             } else if (SessionConfig.GetComponent<SessionConfig>().ThemeInt == 1)
             {
                 Debug.Log("Tswift Theme");
                 Sphere.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.cyan);
-                TSwiftPlayer.SetActive(true);
+                MusicPlayer.GetComponent<AudioSource>().clip = TSwift;
             } else
             {
                 Debug.Log("unrecognized theme setting");

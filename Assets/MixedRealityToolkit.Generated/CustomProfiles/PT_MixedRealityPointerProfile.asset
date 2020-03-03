@@ -27,7 +27,7 @@ MonoBehaviour:
   gazeCursorPrefab: {fileID: 1000012072213228, guid: 5b3e2856904e43c680f84f326861032a,
     type: 3}
   gazeProviderType:
-    reference: 
+    reference: Microsoft.MixedReality.Toolkit.Input.GazeProvider, Microsoft.MixedReality.Toolkit.Services.InputSystem
   pointerOptions:
   - controllerType: 256
     handedness: 7
