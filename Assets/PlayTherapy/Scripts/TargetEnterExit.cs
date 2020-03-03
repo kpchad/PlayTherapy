@@ -47,6 +47,34 @@ public class TargetEnterExit : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "LTabletop")
+        {
+            PoseRegonzier.GetComponent<PoseRecognizer>().inLeftTableTopZone = false;
+        }
+
+        if (collision.gameObject.tag == "LKnucklebend")
+        {
+            PoseRegonzier.GetComponent<PoseRecognizer>().inLeftKnucklebendZone = false;
+        }
+
+        if (collision.gameObject.tag == "LNeutral")
+        {
+            PoseRegonzier.GetComponent<PoseRecognizer>().inLeftNeutralZone = false;
+        }
+
+        if (collision.gameObject.tag == "RTabletop")
+        {
+            PoseRegonzier.GetComponent<PoseRecognizer>().inRightTableTopZone = false;
+        }
+
+        if (collision.gameObject.tag == "RKnucklebend")
+        {
+            PoseRegonzier.GetComponent<PoseRecognizer>().inRightKnucklebendZone = false;
+        }
+
+        if (collision.gameObject.tag == "RNeutral")
+        {
+            PoseRegonzier.GetComponent<PoseRecognizer>().inRightNeutralZone = false;
+        }
     }
 }

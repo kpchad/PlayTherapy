@@ -33,6 +33,11 @@ public class AngleFinder : MonoBehaviour
 
         Vector3 angle = new Vector3 (XrotInt, YrotInt, ZrotInt);
 
+        if (trackedHandedness == Handedness.Right)
+        {
+            angle = (angle - new Vector3(360, 360, 360))*-1;
+        }
+
         return angle; 
     }
 

@@ -30,10 +30,6 @@ public class PoseRecognizer : MonoBehaviour
     public bool inRightKnucklebendZone;
     public bool inRightNeutralZone;
 
-    //debug outputs
-    public GameObject poseBool;
-    public GameObject count;
-
     public GameObject Y1txt;
     public GameObject Y2txt;
     public GameObject Crit1;
@@ -70,9 +66,9 @@ public class PoseRecognizer : MonoBehaviour
                 //increase score
                 score++;
                 Scoreboard.GetComponent<Text>().text = score.ToString();
-           }
+            }
         } else if (inLeftKnucklebendZone && trackLeftHand) {
-            Debug.Log("check for left tabletop pose!");
+            Debug.Log("check for left knucklebend pose!");
             bool poseBool = checkPose(Handedness.Left, pose.Knucklebend);
 
             if (poseBool)
@@ -86,7 +82,7 @@ public class PoseRecognizer : MonoBehaviour
                 Scoreboard.GetComponent<Text>().text = score.ToString();
             }
         } else if (inLeftNeutralZone && trackLeftHand) {
-            Debug.Log("check for left tabletop pose!");
+            Debug.Log("check for left neutral pose!");
             bool poseBool = checkPose(Handedness.Left, pose.Neutral);
 
             if (poseBool)
@@ -121,7 +117,7 @@ public class PoseRecognizer : MonoBehaviour
                 Scoreboard.GetComponent<Text>().text = score.ToString();
             }
         } else if (inRightKnucklebendZone && trackRightHand) {
-            Debug.Log("check for right tabletop pose!");
+            Debug.Log("check for right knucklebend pose!");
             bool poseBool = checkPose(Handedness.Right, pose.Knucklebend);
 
             if (poseBool)
@@ -135,7 +131,7 @@ public class PoseRecognizer : MonoBehaviour
                 Scoreboard.GetComponent<Text>().text = score.ToString();
             }
         } else if (inRightNeutralZone && trackRightHand) {
-            Debug.Log("check for right tabletop pose!");
+            Debug.Log("check for right neutral pose!");
             bool poseBool = checkPose(Handedness.Right, pose.Neutral);
 
             if (poseBool)
@@ -154,11 +150,11 @@ public class PoseRecognizer : MonoBehaviour
 
         }
 
-        ////DEBUG
-        //int Y1 = debugAngle(trackedHandedness1, parentSegment1, childSegment1);
-        //Y1txt.GetComponent<Text>().text = Y1.ToString();
-        //int Y2 = debugAngle(trackedHandedness2, parentSegment2, childSegment2);
-        //Y2txt.GetComponent<Text>().text = Y2.ToString();
+        //DEBUG
+        int Y1 = debugAngle(Handedness.Right, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle);
+        Y1txt.GetComponent<Text>().text = Y1.ToString();
+        int Y2 = debugAngle(Handedness.Right, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint);
+        Y2txt.GetComponent<Text>().text = Y2.ToString();
     }
 
     private bool checkPose(Handedness hand, pose pose)
@@ -178,7 +174,7 @@ public class PoseRecognizer : MonoBehaviour
         {
             crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 20, 0); //change
             //Crit1.GetComponent<Text>().text = crit1.ToString();
-            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 10, 0); //change
+            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 200, 100); //change
             //Crit2.GetComponent<Text>().text = crit2.ToString();
         }
 

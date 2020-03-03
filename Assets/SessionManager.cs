@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class localSceneManager : MonoBehaviour
-{
 
+public class SessionManager : MonoBehaviour
+{
     private GameObject sessionConfig;
 
     // Start is called before the first frame update
     void Start()
     {
-        sessionConfig = GameObject.Find("SessionConfig");
+        
     }
 
     // Update is called once per frame
@@ -20,14 +20,9 @@ public class localSceneManager : MonoBehaviour
         
     }
 
-    public void startSession()
+    public void exitTherapy()
     {
-        SceneManager.LoadScene(1);//load session scene
+        SceneManager.LoadScene(1);//load config scene
+        Destroy(sessionConfig);
     }
-
-    public void startTherapy()
-    {
-        SceneManager.LoadScene(2);//load session scene
-    }
-
 }
