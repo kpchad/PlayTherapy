@@ -182,9 +182,9 @@ public class PoseRecognizer : MonoBehaviour
 
         if (pose == pose.Tabletop)
         {
-            crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 180, 30);
+            crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 180, 20);
             //Crit1.GetComponent<Text>().text = crit1.ToString();
-            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 10, 0);
+            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 20, 0);
             //Crit2.GetComponent<Text>().text = crit2.ToString();
         }
 
@@ -200,7 +200,7 @@ public class PoseRecognizer : MonoBehaviour
         {
             crit1 = checkRequirement(hand, TrackedHandJoint.Palm, TrackedHandJoint.MiddleKnuckle, 20, 0);
             //Crit1.GetComponent<Text>().text = crit1.ToString();
-            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 10, 0);
+            crit2 = checkRequirement(hand, TrackedHandJoint.MiddleKnuckle, TrackedHandJoint.MiddleDistalJoint, 20, 0);
             //Crit2.GetComponent<Text>().text = crit2.ToString();
         }
 

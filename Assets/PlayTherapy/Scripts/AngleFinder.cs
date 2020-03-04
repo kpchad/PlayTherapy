@@ -38,6 +38,22 @@ public class AngleFinder : MonoBehaviour
             angle = (angle - new Vector3(360, 360, 360))*-1;
         }
 
+        // snap all angles <0 to 0
+        if (angle.x > 300)
+        {
+            angle.x = 0;
+        }
+
+        if (angle.y > 300)
+        {
+            angle.y = 0;
+        }
+
+        if (angle.z > 300)
+        {
+            angle.z = 0;
+        }
+
         return angle; 
     }
 
