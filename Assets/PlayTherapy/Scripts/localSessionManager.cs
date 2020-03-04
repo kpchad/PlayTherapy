@@ -15,7 +15,6 @@ public class localSessionManager : MonoBehaviour
     public GameObject MusicPlayer;
     public GameObject FinaleParticleEffect;
     public GameObject ScoreText;
-    public GameObject ExitButton;
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +30,6 @@ public class localSessionManager : MonoBehaviour
         {
             initiationKnucklebend.SetActive(true);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void StartSession()
